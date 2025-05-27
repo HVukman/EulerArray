@@ -1,0 +1,6 @@
+// Calculate 5th power
+pow5:{*/5#x}
+// Make x string with $, turn it into an array of its length, use . to evaluate and then 5th power of each and sum
+digit5: {x=+/pow5'.'((#$x);1)#$x}
+// take 2+ because you cut 2 with 2_ (0 and 1 don't count)
++/2+&1=digit5' 2_!354293
